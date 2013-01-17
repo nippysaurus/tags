@@ -1,0 +1,92 @@
+ul.tag-box {
+  margin: 0;
+  padding: 0px;
+  list-style-type: none;
+  font-family: "Lucida Console", Monaco, monospace;
+  letter-spacing: 1px;
+  font-size: 14px;
+  color: white;
+  text-transform: uppercase;
+  line-height: 18px;
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+ul.tag-box .t {
+  background-color: black;
+  height: 18px;
+  margin: 1px;
+  border-radius: 2px;
+  display: inline-block;
+  cursor: default;
+  overflow: hidden;
+  padding: 2px 6px;
+  float: left;
+}
+ul.tag-box:after {
+  content: "";
+  clear: left;
+  display: block;
+}
+ul.tag-box li.tag .remove {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  position: relative;
+  top: -2px;
+  margin-left: 4px;
+  color: rgba(255, 255, 255, 0.25);
+}
+ul.tag-box li.tag .remove:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+ul.tag-box li.tag-input {
+  display: none;
+}
+ul.tag-box li.tag-add {
+  display: block;
+}
+ul.tag-box.adding li.tag-input {
+  display: block;
+}
+ul.tag-box.adding li.tag-add {
+  display: none;
+}
+ul.tag-box li.tag-input input,
+ul.tag-box li.tag-input span {
+  line-height: 18px;
+  height: 18px;
+  overflow: hidden;
+}
+ul.tag-box input {
+  font-family: "Lucida Console", Monaco, monospace;
+  letter-spacing: 1px;
+  font-size: 14px;
+  color: white;
+  text-transform: uppercase;
+  line-height: 18px;
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  background: black;
+  border: 0;
+  padding: 0;
+  margin: 0 0 0 -1px;
+  width: 11px;
+  min-width: 11px;
+  outline: none;
+  display: block;
+}
+ul.tag-box li.tag-add {
+  opacity: 0.2;
+  cursor: pointer;
+}
+ul.tag-box li.tag-add > span {
+  position: relative;
+  font-weight: bold;
+  top: -2px;
+}
+ul.tag-box li.tag-add:hover {
+  opacity: 0.8;
+}
